@@ -211,14 +211,14 @@
                         (6 :this :are)
                         ]}]
  ["21_monads" {"__" [mapcat
-                      [x]
-                      domonad
-                      "incremented!"
-                      "decremented!"
-                      "incremented!"
-                      6
-                      "decremented!"
-                      "incremented!"
-                      6
-                      "decremented!"
-                      42]}]]
+                     [x]
+                     sequence-m
+                     "incremented!"
+                     "decremented!"
+                     "incremented!"
+                     6
+                     "decremented!"
+                     "incremented!"
+                     6
+                     "decremented!"
+                     42]}]]

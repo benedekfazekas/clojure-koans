@@ -25,10 +25,10 @@
     ((monad-compose f1 f2 f3) 5))
 
  "Do you think it is comp what you are doing? hm..."
- (= ((fn [x] (__ sequence-m [a (f3 x)
-                            b (f2 a)
-                            c (f1 b)]
-                c)) 10)
+ (= ((fn [x] (domonad __ [a (f3 x)
+                         b (f2 a)
+                         c (f1 b)]
+                     c)) 10)
     ((fn [x] (->> x f3 (mapcat f2) (mapcat f1))) 10))
 
  "Dynamic balance means lots of movement but no change
