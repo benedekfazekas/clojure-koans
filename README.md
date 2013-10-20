@@ -25,6 +25,8 @@ The only things you'll need to run the Clojure Koans are:
 - JRE 1.5 or higher
 - [clojure-1.5.1.jar](http://repo1.maven.org/maven2/org/clojure/clojure/1.5.1/clojure-1.5.1.zip)
 
+However, monad koans are dependent on algo.monads-0.1.4.jar as defined in the leiningen project file.
+
 You can use [Leiningen](http://github.com/technomancy/leiningen) to
 automatically install the Clojure jar in the right place. Leiningen will also
 get you a couple more jarfiles, including JLine, which allows you some of the
@@ -144,6 +146,7 @@ Using the [koans](http://en.wikipedia.org/wiki/koan) metaphor as a tool for
 learning a programming language started with the
 [Ruby Koans](http://rubykoans.com) by [EdgeCase](http://github.com/edgecase).
 
+Monad koans are based on [Jim Duey's tutorial](http://www.intensivesystems.net/tutorials/monads_101.html).
 
 ### License
 
